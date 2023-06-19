@@ -1,28 +1,28 @@
-## MongoDB [![Build Status Image](https://travis-ci.org/nanobox-io/nanobox-docker-mongodb.svg)](https://travis-ci.org/nanobox-io/nanobox-docker-mongodb)
+## MongoDB [![Build Status Image](https://github.com/mu-box/microbox-docker-mongodb/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/microbox-docker-mongodb/actions)
 
-This is an MongoDB Docker image used to launch a MongoDB service on Nanobox. To use this image, add a data component to your `boxfile.yml` with the `nanobox/mongodb` image specified:
+This is an MongoDB Docker image used to launch a MongoDB service on Microbox. To use this image, add a data component to your `boxfile.yml` with the `mubox/mongodb` image specified:
 
 ```yaml
 data.db:
-  image: nanobox/mongodb:3.0
+  image: mubox/mongodb:3.0
 ```
 
 ## MongoDB Configuration Options
 MongoDB components are configured in your `boxfile.yml`. All available configuration options are outlined below.
 
 ###### Quick Links
-[version](#version)  
-[objcheck](#objcheck)  
-[log\_verbosity](#log-verbosity)  
-[directoryperdb](#directoryperdb)  
-[logappend](#logappend)  
-[nojournal](#nojournal)  
+[version](#version)
+[objcheck](#objcheck)
+[log\_verbosity](#log-verbosity)
+[directoryperdb](#directoryperdb)
+[logappend](#logappend)
+[nojournal](#nojournal)
 [noscripting](#noscripting)
 
 #### Overview of MongoDB Boxfile Settings
 ```yaml
 data.db:
-  image: nanobox/mongodb:3.0
+  image: mubox/mongodb:3.0
   config:
     objcheck: true
     log_verbosity: 'v'
@@ -46,7 +46,7 @@ When configuring a MongoDB service in your Boxfile, you can specify the version 
 ```yaml
 # default setting
 data.db:
-  image: nanobox/mongodb:3.0
+  image: mubox/mongodb:3.4
 ```
 
 ### ObjCheck
@@ -56,7 +56,7 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 ```yaml
 #default setting
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     objcheck: true
 ```
@@ -67,7 +67,7 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 #### log\_verbosity
 ```yaml
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     log_verbosity: 'v'
 ```
@@ -79,7 +79,7 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 ```yaml
 #default setting
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     directoryperdb: true
 ```
@@ -91,7 +91,7 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 ```yaml
 #default setting
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     logappend: true
 ```
@@ -103,7 +103,7 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 ```yaml
 #default setting
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     nojournal: false
 ```
@@ -115,14 +115,14 @@ View the [MongoDB documentation](http://docs.mongodb.org/manual/reference/config
 ```yaml
 #default setting
 data.db:
-  image: nanobox/mongodb
+  image: mubox/mongodb
   config:
     noscripting: false
 ```
 
 ## Help & Support
-This is a MongoDB Docker image provided by [Nanobox](http://nanobox.io). If you need help with this image, you can reach out to us in the [#nanobox IRC channel](http://webchat.freenode.net/?channels=nanobox). If you are running into an issue with the image, feel free to [create a new issue on this project](https://github.com/nanobox-io/nanobox-docker-mongodb/issues/new).
+This is a MongoDB Docker image provided by [Microbox](http://microbox.cloud). If you need help with this image, you can reach out to us in the [Microbox Discord](https://discord.gg/MCDdHfy). If you are running into an issue with the image, feel free to [create a new issue on this project](https://github.com/mu-box/microbox-docker-mongodb/issues/new).
 
 ## License
 
-Mozilla Public License, version 2.0
+This project is released under [The MIT License](http://opensource.org/licenses/MIT).
